@@ -1,7 +1,8 @@
 ---
 title: "InsQuoteService:createUpdateQuote"
-source: "https://help.salesforce.com/s/articleView?id=ind.insurance_insquoteservice__createupdatequote.htm&type=5&language=en_US"
+source: "https://help.salesforce.com/s/articleView?id=ind.insurance_insquoteservice__createupdatequote.htm&type=5"
 scraped: "2026-04-13"
+filter: "ind.insurance_ins"
 ---# InsQuoteService:createUpdateQuote
 
 InsQuoteService:createUpdateQuote[](https://help.salesforce.com/s?language=en_US)
