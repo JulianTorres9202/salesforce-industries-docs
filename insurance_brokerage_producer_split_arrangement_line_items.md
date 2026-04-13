@@ -1,0 +1,188 @@
+---
+title: "Producer Split Arrangement and Line Items"
+source: "https://help.salesforce.com/s/articleView?id=ind.insurance_brokerage_producer_split_arrangement_line_items.htm&language=en_US&type=5"
+scraped: "2026-04-13"
+filter: "ind.insurance_"
+---# Producer Split Arrangement and Line Items
+
+Producer Split Arrangement and Line Items
+
+You are here:
+
+1.  [Salesforce Help](/s/?language=en_US)
+2.  [Docs](/s/products?language=en_US)
+3.  [Digital Insurance](https://help.salesforce.com/s/articleView?id=ind.insurance_admin_standard.htm&language=en_US&type=5)
+
+[](https://help.salesforce.com/s?language=en_US)
+
+# Producer Split Arrangement and Line Items
+
+Create a producer split arrangement record and line items to define the percentage of split allocated to each producer, and then associate it with an account or insurance policy. This applies to explicit producer split arrangement definitions, producer role split arrangement definitions, and subsequent producer split arrangements.
+
+### Required Editions
+
+<table class="slds-table slds-table_bordered slds-m-bottom_small edition" lwc-3eigj2skqo3=""><colgroup lwc-3eigj2skqo3=""><col style="width:100%" lwc-3eigj2skqo3=""></colgroup><tbody lwc-3eigj2skqo3=""><tr class="" lwc-3eigj2skqo3=""><td style="vertical-align:top;" class="slds-cell-wrap" lwc-3eigj2skqo3="">Available in: Lightning Experience</td></tr><tr class="" lwc-3eigj2skqo3=""><td style="vertical-align:top;" class="slds-cell-wrap" lwc-3eigj2skqo3="">Available in: <strong lwc-3eigj2skqo3="">Professional</strong>, <strong lwc-3eigj2skqo3="">Enterprise</strong>, and <strong lwc-3eigj2skqo3="">Unlimited</strong> Editions where Financial Service Cloud and Insurance Brokerage are enabled</td></tr></tbody></table>
+
+[](https://help.salesforce.com/s?language=en_US)
+
+## Create the Producer Split Arrangement
+
+Create a producer split arrangement to define how a producer's commission is split with another producer, producer group, or agency.
+
+### Required Editions
+
+<table class="slds-table slds-table_bordered slds-m-bottom_small edition" lwc-3eigj2skqo3=""><colgroup lwc-3eigj2skqo3=""><col style="width:100%" lwc-3eigj2skqo3=""></colgroup><tbody lwc-3eigj2skqo3=""><tr class="" lwc-3eigj2skqo3=""><td style="vertical-align:top;" class="slds-cell-wrap" lwc-3eigj2skqo3="">Available in: Lightning Experience</td></tr><tr class="" lwc-3eigj2skqo3=""><td style="vertical-align:top;" class="slds-cell-wrap" lwc-3eigj2skqo3="">Available in: <strong lwc-3eigj2skqo3="">Professional</strong>, <strong lwc-3eigj2skqo3="">Enterprise</strong>, and <strong lwc-3eigj2skqo3="">Unlimited</strong> Editions where Financial Service Cloud and Insurance Brokerage are enabled</td></tr></tbody></table>
+
+| User Permissions Needed |
+| --- |
+| To create the producer split arrangement: | Insurance Commissions Management and Insurance Brokerage User |
+
+1.  From the App Launcher, find and select **Producer Split Arrangements**.
+2.  Click **New** and enter the required information.
+    
+    [](https://help.salesforce.com/s?language=en_US)
+    
+    -   Don’t enter an end date for new splits. Provide an end date only if you don’t want to assign this split arrangement to new assignments.
+    -   Select Line of Business and Line of Coverage if you want to filter the producer roles or producer split arrangements based on these values during producer role and producer split assignments.
+    
+3.  Save your changes.
+    
+    A message confirms that the producer split arrangement record is created.
+    
+
+[](https://help.salesforce.com/s?language=en_US)
+
+## Create the Producer Split Arrangement Line Items
+
+Specify how to allocate commission payments to producers and producer roles.
+
+### Required Editions
+
+<table class="slds-table slds-table_bordered slds-m-bottom_small edition" lwc-3eigj2skqo3=""><colgroup lwc-3eigj2skqo3=""><col style="width:100%" lwc-3eigj2skqo3=""></colgroup><tbody lwc-3eigj2skqo3=""><tr class="" lwc-3eigj2skqo3=""><td style="vertical-align:top;" class="slds-cell-wrap" lwc-3eigj2skqo3="">Available in: Lightning Experience</td></tr><tr class="" lwc-3eigj2skqo3=""><td style="vertical-align:top;" class="slds-cell-wrap" lwc-3eigj2skqo3="">Available in: <strong lwc-3eigj2skqo3="">Professional</strong>, <strong lwc-3eigj2skqo3="">Enterprise</strong>, and <strong lwc-3eigj2skqo3="">Unlimited</strong> Editions where Financial Service Cloud and Insurance Brokerage are enabled</td></tr></tbody></table>
+
+| User Permissions Needed |
+| --- |
+| To create the producer split arrangement line items: | Insurance Commissions Management and Insurance Brokerage User |
+
+1.  From the Producer Split Arrangement record, on the Arrangement Line Items related list, click **New**.
+2.  In the New Producer Split Arrangement Line Item window, enter the required details.
+    
+    | Field name | description |
+    | --- | --- |
+    | Name | The name of the producer split arrangement line item record. This field is autogenerated. |
+    | Producer | The producer associated with the line item. |
+    | Producer Split Arrangement | The parent producer split arrangement associated with the line item. |
+    | Split Type | The type of split. For example, Commission, Bonus, or Overrides. |
+    | Producer Relation Type | The relationship of the producer with the brokerage. |
+    | Producer Role | The role of the producer associated with the line item. For example, Primary or Secondary. |
+    | Split Percentage | The commission percentage associated with the split. |
+    | Split Amount | The flat amount that the producer gets paid for the split. |
+    | Receive Rounded Amount | Specifies which producer receives the rounded up amount during uneven split. |
+    | Subsequent Producer Split Arrangement | The subsequent producer split arrangement associated with the line item. |
+    
+    The split percentage total for all line items related to a producer split arrangement can be less than 100%, but if it exceeds 100%, the commission processing fails.
+    
+3.  Save your changes.
+    
+    A message confirms that the producer split arrangement line item record is created.
+    
+
+[](https://help.salesforce.com/s?language=en_US)
+
+### Considerations and Limitations for Split Amount and Split Percentage Fields
+
+Here are a few things to keep in mind when dealing with split amounts and percentages.
+
+### Required Editions
+
+<table class="slds-table slds-table_bordered slds-m-bottom_small edition" lwc-3eigj2skqo3=""><colgroup lwc-3eigj2skqo3=""><col style="width:100%" lwc-3eigj2skqo3=""></colgroup><tbody lwc-3eigj2skqo3=""><tr class="" lwc-3eigj2skqo3=""><td style="vertical-align:top;" class="slds-cell-wrap" lwc-3eigj2skqo3="">Available in: Lightning Experience</td></tr><tr class="" lwc-3eigj2skqo3=""><td style="vertical-align:top;" class="slds-cell-wrap" lwc-3eigj2skqo3="">Available in: <strong lwc-3eigj2skqo3="">Professional</strong>, <strong lwc-3eigj2skqo3="">Enterprise</strong>, and <strong lwc-3eigj2skqo3="">Unlimited</strong> Editions where Financial Service Cloud and Insurance Brokerage are enabled</td></tr></tbody></table>
+
+[](https://help.salesforce.com/s?language=en_US)
+
+-   When processing a commission statement for split arrangement line items, the system first processes the line items with fixed split amounts. After allocating these fixed amounts, the remaining balance is then distributed among the line items with split percentages.
+    
+    [](https://help.salesforce.com/s?language=en_US)Note This logic applies to each producer split arrangement, even within hierarchies.
+    
+-   The split amount for a producer split arrangement line item can't be negative.
+-   If the commission amount of a commission statement line item is negative, then the producer split arrangement line items with split amount aren't considered for processing.
+-   For an split arrangement line item, you can enter either a split amount or a percentage, but not both.
+-   In a multi-currency organization, the commission amount and split amount must be in the same currency.
+
+[](https://help.salesforce.com/s?language=en_US)
+
+### Rounding Commission Amounts in Producer Split Arrangement
+
+When processing a commission statement, the rounding logic ensures that the system creates producer commission records with precise amounts that round to an appropriate currency denomination, which is two significant digits after decimal point. The Receive Rounded Amount field on the Producer Split Arrangement Line Item record page specifies the specific split arrangement line item that must receive the rounded commission amount.
+
+### Required Editions
+
+<table class="slds-table slds-table_bordered slds-m-bottom_small edition" lwc-3eigj2skqo3=""><colgroup lwc-3eigj2skqo3=""><col style="width:100%" lwc-3eigj2skqo3=""></colgroup><tbody lwc-3eigj2skqo3=""><tr class="" lwc-3eigj2skqo3=""><td style="vertical-align:top;" class="slds-cell-wrap" lwc-3eigj2skqo3="">Available in: Lightning Experience</td></tr><tr class="" lwc-3eigj2skqo3=""><td style="vertical-align:top;" class="slds-cell-wrap" lwc-3eigj2skqo3="">Available in: <strong lwc-3eigj2skqo3="">Professional</strong>, <strong lwc-3eigj2skqo3="">Enterprise</strong>, and <strong lwc-3eigj2skqo3="">Unlimited</strong> Editions where Financial Service Cloud and Insurance Brokerage are enabled</td></tr></tbody></table>
+
+Here are some rules that the rounding logic follows.
+
+[](https://help.salesforce.com/s?language=en_US)
+
+-   If a producer split arrangement line item has the Receive Rounded Amount field set to true, the amount is rounded to the nearest 0.0X (two significant digits after the decimal point) value. For example, 0.006 is rounded to 0.01, and 0.004 is rounded to 0.00.
+-   The system processes only one producer split arrangement line item per split type that has the Receive Rounded Amount field set to true within a single producer split arrangement.
+    
+    | Total Commission Amount: $100.00 |
+    | --- |
+    | Line Item | Percentage | Split Type | Roundup Indicator | FInal Amount |
+    | --- | --- | --- | --- | --- |
+    | Line Item 1 | 30 | Commission | True | $30 |
+    | Line Item 2 | 40 | Bonus | True | NA |
+    | Line Item 3 | 70 | Commission | False | $70 |
+    | Line Item 4 | 60 | Bonus | False | NA |
+    
+-   If more than one producer split arrangement line item has the Receive Rounded Amount set to true, the system generates a failure message during commissions processing. The same logic applies to producer relationship.
+    
+    | Total Commission Amount: $100.00 |
+    | --- |
+    | Line Item | Percentage | Roundup Indicator |
+    | --- | --- | --- |
+    | Line Item 1 | 30 | True |
+    | Line Item 2 | 40 | True |
+    | Line Item 3 | 30 | False |
+    
+    The system generates a failure message because more than one line item has the Received Rounded Amount set to True.
+    
+-   If none of the producer split arrangement line item records have the Receive Rounded Amount field set to true, the system uses the calculated amount and may result in a marginal error.
+    
+    | Total Commission Amount: $100.13 |
+    | --- |
+    | Line Item | Percentage | Calculated Amount | FInal Amount |
+    | --- | --- | --- | --- |
+    | Line Item 1 | 30 | $30.039 | $30.039 |
+    | Line Item 2 | 20 | $20.026 | $20.026 |
+    | Line Item 3 | 50 | $50.065 | $50.065 |
+    
+-   When the Receive Rounded Amount is set to true for one of the line items, the amount will be rounded down after the split calculation from the other line items and rounded up to the one that has the rounded amount set to true.
+-   If the total splits don’t match the initial amount after rounding, the adjustment amount is added to the line item that has Receive Rounded Amount set to true.
+    
+    | Total Commission Amount: $100.13 |
+    | --- |
+    | Line Item | Percnetage | ROund up Indicator | Calculated Amount | Rounded Amount | Final Amount |
+    | --- | --- | --- | --- | --- | --- |
+    | Line Item 1 | 30 | True | $30.039 | $30.04 | $30.05 |
+    | Line Item 2 | 20 | False | $20.026 | $20.02 | $20.02 |
+    | Line Item 3 | 50 | False | $50.065 | $50.06 | $50.06 |
+    
+    The adjustment of $0.01 is given to Line Item 1.
+    
+-   If the split percentages don’t add up to 100%, no adjustments are made.
+    
+    | Total Commission Amount: $100.13 |
+    | --- |
+    | Line item | Percentage | ROund up Indicator | Calculated Amount | Rounded Amount | Final Amount |
+    | --- | --- | --- | --- | --- | --- |
+    | Line Item 1 | 30 | True | $30.039 | $30.04 | $30.04 |
+    | Line Item 2 | 20 | False | $20.026 | $20.02 | $20.02 |
+    
+    No adjustements are made in this scenario.
+    
+
+Did this article solve your issue?
+
+Let us know so we can improve!
+
+YesNo
