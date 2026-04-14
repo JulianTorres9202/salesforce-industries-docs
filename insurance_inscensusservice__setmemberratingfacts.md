@@ -1,8 +1,8 @@
 ---
 title: "InsCensusService:setMemberRatingFacts"
 source: "https://help.salesforce.com/s/articleView?id=ind.insurance_inscensusservice__setmemberratingfacts.htm&language=en_US&type=5"
-scraped: "2026-04-13"
-filter: "ind.insurance_ins"
+scraped: "2026-04-14"
+filter: "ind.insurance_"
 ---# InsCensusService:setMemberRatingFacts
 
 InsCensusService:setMemberRatingFacts[](https://help.salesforce.com/s?language=en_US)
