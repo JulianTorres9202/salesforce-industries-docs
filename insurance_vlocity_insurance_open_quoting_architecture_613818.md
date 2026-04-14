@@ -1,0 +1,134 @@
+---
+title: "Insurance Open Quoting Architecture"
+source: "https://help.salesforce.com/s/articleView?id=ind.insurance_vlocity_insurance_open_quoting_architecture_613818.htm&language=en_US&type=5"
+scraped: "2026-04-14"
+filter: "ind.insurance_"
+---# Insurance Open Quoting Architecture
+
+Insurance Open Quoting Architecture[](https://help.salesforce.com/s?language=en_US)
+
+You are here:
+
+1.  [Salesforce Help](/s/?language=en_US)
+2.  [Docs](/s/products?language=en_US)
+3.  [Digital Insurance](https://help.salesforce.com/s/articleView?id=ind.insurance_admin_standard.htm&language=en_US&type=5)
+
+# Insurance Open Quoting Architecture
+
+Use Insurance Open Quoting Architecture to seamlessly link your quoting processes with your external policy administration system.
+
+Insurance comes with a product management system built right in. However, if you prefer using an external policy administration system, the Insurance Open Quoting Architecture can support that. So you choose what works best for you. Either way, Insurance can help.
+
+Curious how the magic of Insurance Open Quoting Architecture works? Let's find out!
+
+[](https://help.salesforce.com/s?language=en_US)
+
+## Insurance Open Quoting Architecture Flow
+
+Use the Insurance Open Quoting Architecture to fulfill your quoting needs in two ways:
+
+-   Initiate a quote from the external policy administration system.
+    
+    [](https://help.salesforce.com/s?language=en_US)![Illustrates the quoting flow process when it is initiated from the external system.](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-insurance-260-0-0-production-enus/e4c2671d-0822-4c56-95dd-073f2b1f9ddc/insurance/images/h/help_flowchart1_insuranceopenquoting_051822v2_zh.png)
+    
+    1.  Create a quote in the external policy administration system.
+        
+    2.  The external system calls an Integration Procedure with `InsQuoteService:createUpdateQuoteFromExternal`.
+        
+    3.  `InsQuoteService:createUpdateQuoteFromExternal` uses the returned JSON to update the quote record.
+        
+    
+-   Initiate the quote in Salesforce from the Quote LWC.
+    
+    [](https://help.salesforce.com/s?language=en_US)![Illustrates the quoting flow process when it is initiated from the Salesforce UI.](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-insurance-260-0-0-production-enus/e4c2671d-0822-4c56-95dd-073f2b1f9ddc/insurance/images/h/help_flowchart2_insuranceopenquoting_051822_zh.png)
+    
+    1.  Create a quote in your Salesforce org from the Quote LWC.
+        
+    2.  Configure the quote by adding products and coverages.
+        
+    3.  Click the **Rate Now** button.
+        
+    4.  The Integration Procedure generates the simplified JSON from `InsQuoteService:getQuoteDetail`.
+        
+    5.  The HTTP Action sends the simplified JSON to the external system.
+        
+    6.  The external system returns pricing JSON updates.
+        
+    7.  `InsQuoteService:createUpdateQuoteFromExternal` uses the returned JSON to update the quote record.
+        
+    8.  The Quote LWC updates with the information returned from the external system via the Integration Procedure.
+        
+    
+
+[](https://help.salesforce.com/s?language=en_US)
+
+## Quoting Services
+
+Insurance Open Quoting Architecture uses services to compile and interpret external policy administration data.
+
+| 
+InsQuoteService:getQuoteDetail
+
+ | 
+
+InsQuoteService:createUpdateQuoteFromExternal
+
+ | 
+
+InsQuoteService:createUpdateQuote
+
+ |
+| --- | --- | --- |
+| 
+
+[](https://help.salesforce.com/s?language=en_US)Use this service to gather the important details about a quote that the external policy administration system uses to rate the quote.
+
+ | 
+
+[](https://help.salesforce.com/s?language=en_US)Use this service to create a quote or update an existing quote with new information through an inbound API call from an external policy administration system using a simplified JSON structure.
+
+[](https://help.salesforce.com/s?language=en_US)For external rating `InsQuoteService:createUpdateQuoteFromExternal` uses a simple Quote JSON structure. This structure is based on the original output returned by the `InsQuoteService:getQuoteDetail` service but includes fewer fields and altered node names.
+
+ | 
+
+[](https://help.salesforce.com/s?language=en_US)Use this service if you aren’t using the simplified JSON.
+
+ |
+
+[](https://help.salesforce.com/s?language=en_US)Note
+
+To get the simplified JSON structure that the external system must map to, set these parameters in the `InsQuoteService:getQuoteDetail` service:
+
+Remote Option: `isForExternal` = `true`
+
+Input: `action` = `submit` or `reprice`
+
+Tip
+
+The Quote structure returned by the external policy administration service must be the same as the structure expected by `InsQuoteService:createUpdateQuoteFromExternal` or `InsQuoteService:createUpdateQuote`.
+
+Want to see some examples of the simplified JSON generated by these services? Read [Vlocity Insurance Open Quoting Architecture Simplified JSON](https://help.salesforce.com/s/articleView?id=ind.insurance_vlocity_insurance_open_quoting_architecture_simplifiedjson_614043.htm&language=en_US&type=5 "You can use simplified Vlocity Insurance quote JSON optimized for easy mapping with external policy administration systems.").
+
+[](https://help.salesforce.com/s?language=en_US)
+
+## External Rating and Pricing Setup Workflow
+
+If you decided to initiate the quoting flow from Salesforce, there’s some setup you need to do to get Insurance Open Quoting Architecture up and running in your org.
+
+1.  [Set Up an Integration Procedure to Call an External Rating System](https://help.salesforce.com/s/articleView?id=ind.insurance_set_up_an_integration_procedure_to_call_an_external_rating_system_613940.htm&language=en_US&type=5 "To use Vlocity Insurance Open Quoting Architecture you need to create an integration procedure that gathers the important information your external policy administration system can use to rate or price the quote. This integration procedure is included in the product and is triggered when a quote with that product included is rerated using the Rate Now button.")
+    
+2.  [Set Up a Product for External Rating](https://help.salesforce.com/s/articleView?id=ind.insurance_set_up_a_product_for_external_rating_614013.htm&language=en_US&type=5 "External policy administration systems can help you manage your insurance product offerings. Vlocity Insurance Open Quoting Architecture uses a product record in the internal Vlocity Insurance system to link quoting information in the quoting flow to the correct product in your external system.")
+    
+
+-   **[Set Up an Integration Procedure to Call an External Rating System](https://help.salesforce.com/s/articleView?id=ind.insurance_set_up_an_integration_procedure_to_call_an_external_rating_system_613940.htm&language=en_US&type=5)**  
+    To use Vlocity Insurance Open Quoting Architecture you need to create an integration procedure that gathers the important information your external policy administration system can use to rate or price the quote. This integration procedure is included in the product and is triggered when a quote with that product included is rerated using the Rate Now button.
+-   **[Set Up a Product for External Rating](https://help.salesforce.com/s/articleView?id=ind.insurance_set_up_a_product_for_external_rating_614013.htm&language=en_US&type=5)**  
+    External policy administration systems can help you manage your insurance product offerings. Vlocity Insurance Open Quoting Architecture uses a product record in the internal Vlocity Insurance system to link quoting information in the quoting flow to the correct product in your external system.
+-   **[Vlocity Insurance Open Quoting Architecture Simplified JSON](https://help.salesforce.com/s/articleView?id=ind.insurance_vlocity_insurance_open_quoting_architecture_simplifiedjson_614043.htm&language=en_US&type=5)**  
+    You can use simplified Vlocity Insurance quote JSON optimized for easy mapping with external policy administration systems.
+
+Did this article solve your issue?
+
+Let us know so we can improve!
+
+YesNo
