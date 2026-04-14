@@ -1,8 +1,8 @@
 ---
 title: "InsCensusServiceStd:createContacts"
 source: "https://help.salesforce.com/s/articleView?id=ind.insurance_inscensusservicestd__createcontacts.htm&language=en_US&type=5"
-scraped: "2026-04-13"
-filter: "ind.insurance_ins"
+scraped: "2026-04-14"
+filter: "ind.insurance_"
 ---# InsCensusServiceStd:createContacts
 
 InsCensusServiceStd:createContacts[](https://help.salesforce.com/s?language=en_US)
