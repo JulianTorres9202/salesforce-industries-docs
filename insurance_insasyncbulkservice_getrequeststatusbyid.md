@@ -1,8 +1,8 @@
 ---
 title: "InsAsyncBulkService:getRequestStatusById"
 source: "https://help.salesforce.com/s/articleView?id=ind.insurance_insasyncbulkservice_getrequeststatusbyid.htm&language=en_US&type=5"
-scraped: "2026-04-13"
-filter: "ind.insurance_ins"
+scraped: "2026-04-14"
+filter: "ind.insurance_"
 ---# InsAsyncBulkService:getRequestStatusById
 
 InsAsyncBulkService:getRequestStatusById[](https://help.salesforce.com/s?language=en_US)
