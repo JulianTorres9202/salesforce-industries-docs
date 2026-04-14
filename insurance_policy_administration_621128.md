@@ -1,0 +1,55 @@
+---
+title: "Manage Insurance Policies"
+source: "https://help.salesforce.com/s/articleView?id=ind.insurance_policy_administration_621128.htm&language=en_US&type=5"
+scraped: "2026-04-14"
+filter: "ind.insurance_"
+---# Manage Insurance Policies
+
+Manage Insurance Policies[](https://help.salesforce.com/s?language=en_US)
+
+You are here:
+
+1.  [Salesforce Help](/s/?language=en_US)
+2.  [Docs](/s/products?language=en_US)
+3.  [Digital Insurance](https://help.salesforce.com/s/articleView?id=ind.insurance_admin_standard.htm&language=en_US&type=5)
+
+# Manage Insurance Policies
+
+Insurance Policy Administration extends throughout the lifecycle of an insurance policy. Any updates made to a policy during its term are managed through policy transactions.
+
+<table class="slds-table slds-table_bordered slds-m-bottom_small" lwc-3eigj2skqo3=""><colgroup lwc-3eigj2skqo3=""><col style="width:6.5420560747663545%" lwc-3eigj2skqo3=""><col style="width:93.45794392523365%" lwc-3eigj2skqo3=""></colgroup><tbody lwc-3eigj2skqo3=""><tr class="" lwc-3eigj2skqo3=""><td style="text-align:left;vertical-align:top;" class="slds-cell-wrap" lwc-3eigj2skqo3=""><span style="vertical-align:text-bottom;display:inline-block;" lwc-3eigj2skqo3=""><img alt="Help resources. Icon." src="https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-insurance-260-0-0-production-enus/e4c2671d-0822-4c56-95dd-073f2b1f9ddc/insurance/images/h/insurance_help_minimap.png" style="width:35px;margin-bottom:0;" lwc-3eigj2skqo3=""></span></td><td style="text-align:left;vertical-align:top;" class="slds-cell-wrap" lwc-3eigj2skqo3=""><p lwc-3eigj2skqo3="">Dive deeper into Salesforce Help.</p><p lwc-3eigj2skqo3=""><em lwc-3eigj2skqo3="">Get Oriented</em></p><ul lwc-3eigj2skqo3=""><li lwc-3eigj2skqo3=""><a target="_blank" href="https://help.salesforce.com/s/articleView?id=ind.insurance_policy_transaction_621215.htm&amp;language=en_US&amp;type=5" lwc-3eigj2skqo3="">Policy Transactions</a></li><li lwc-3eigj2skqo3=""><a target="_blank" href="https://help.salesforce.com/s/articleView?id=ind.insurance_Create_an_Out_of_Sequence_Endorsement.htm&amp;language=en_US&amp;type=5" lwc-3eigj2skqo3="">Out-of-Sequence Endorsements</a></li><li lwc-3eigj2skqo3=""><a target="_blank" href="https://help.salesforce.com/s/articleView?id=ind.insurance_insurance_policy_payment_schedule.htm&amp;language=en_US&amp;type=5" lwc-3eigj2skqo3="">Policy Payment Schedules</a></li><li lwc-3eigj2skqo3=""><a target="_blank" href="https://help.salesforce.com/s/articleView?id=ind.insurance_view_a_specific_policy_621289.htm&amp;language=en_US&amp;type=5" lwc-3eigj2skqo3="">Work with Policies</a></li><li lwc-3eigj2skqo3=""><a target="_blank" href="https://help.salesforce.com/s/articleView?id=ind.insurance_managing_multiroot_policies.htm&amp;language=en_US&amp;type=5" lwc-3eigj2skqo3="">Work with Multi-Root Policies</a></li></ul><p lwc-3eigj2skqo3=""><em lwc-3eigj2skqo3="">Configure Related Features</em></p><ul lwc-3eigj2skqo3=""><li lwc-3eigj2skqo3=""><a target="_blank" href="https://help.salesforce.com/s/articleView?id=ind.insurance_configure_history_timelines_with_insurance_history_lwc.htm&amp;language=en_US&amp;type=5" lwc-3eigj2skqo3="">Show History Timelines on Policies</a></li><li lwc-3eigj2skqo3=""><a target="_blank" href="https://help.salesforce.com/s/articleView?id=ind.insurance_t_commissions_624083.htm&amp;language=en_US&amp;type=5" lwc-3eigj2skqo3="">Track Commissions</a></li></ul><p lwc-3eigj2skqo3=""><em lwc-3eigj2skqo3="">Build End-to-End Processes with Policy Services</em></p><ul lwc-3eigj2skqo3=""><li lwc-3eigj2skqo3=""><a target="_blank" href="https://help.salesforce.com/s/articleView?id=ind.insurance_inspolicyservice__createupdatepolicy.htm&amp;language=en_US&amp;type=5" lwc-3eigj2skqo3="">Issue and and Modify Policies</a></li><li lwc-3eigj2skqo3=""><a target="_blank" href="https://help.salesforce.com/s/articleView?id=ind.insurance_inspolicyservice__createrenewalpolicy.htm&amp;language=en_US&amp;type=5" lwc-3eigj2skqo3="">Renew Policies</a></li><li lwc-3eigj2skqo3=""><a target="_blank" href="https://help.salesforce.com/s/articleView?id=ind.insurance_inspolicyservice__cancelpolicy.htm&amp;language=en_US&amp;type=5" lwc-3eigj2skqo3="">Cancel Policies</a></li></ul><p lwc-3eigj2skqo3=""><em lwc-3eigj2skqo3="">Track Policy Terms with Policy Services</em></p><ul lwc-3eigj2skqo3=""><li lwc-3eigj2skqo3=""><a target="_blank" href="https://help.salesforce.com/s/articleView?id=ind.insurance_inspolicyservice__createpolicyterms.htm&amp;language=en_US&amp;type=5" lwc-3eigj2skqo3="">Create Policy Terms for Power Attributes</a></li><li lwc-3eigj2skqo3=""><a target="_blank" href="https://help.salesforce.com/s/articleView?id=ind.insurance_inspolicytermsservice_methods.htm&amp;language=en_US&amp;type=5" lwc-3eigj2skqo3="">Get the Current Standing of Policy Terms</a></li></ul></td></tr><tr class="" lwc-3eigj2skqo3=""><td style="text-align:left;vertical-align:top;" class="slds-cell-wrap" lwc-3eigj2skqo3=""><span style="vertical-align:text-bottom;display:inline-block;" lwc-3eigj2skqo3=""><img alt="Traihead resources. Icon." src="https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-insurance-260-0-0-production-enus/e4c2671d-0822-4c56-95dd-073f2b1f9ddc/insurance/images/s-t/insurance_trailhead_minimap.png" style="width:35px;margin-bottom:0;" lwc-3eigj2skqo3=""></span></td><td style="text-align:left;vertical-align:top;" class="slds-cell-wrap" lwc-3eigj2skqo3=""><p lwc-3eigj2skqo3="">Use Trailhead to build and test your skills.</p><ul lwc-3eigj2skqo3=""><li lwc-3eigj2skqo3=""><a target="_blank" href="https://trailhead.salesforce.com/content/learn/modules/individual-insurance-policy-administration-foundations/meet-individual-policy-administration" lwc-3eigj2skqo3="">Meet Individual Policy Administration</a></li></ul></td></tr></tbody></table>
+
+-   **[Insurance Policy Transactions](https://help.salesforce.com/s/articleView?id=ind.insurance_policy_transaction_621215.htm&language=en_US&type=5)**  
+    Insurance Policy Administration extends throughout the lifecycle of an insurance policy. Any updates made to a policy during its term are managed through policy transactions.
+-   **[View a Specific Policy](https://help.salesforce.com/s/articleView?id=ind.insurance_view_a_specific_policy_621289.htm&language=en_US&type=5)**  
+    A policy shows details about coverage, insured items, and insured parties.
+-   **[Manage an Out-of-Sequence Endorsement](https://help.salesforce.com/s/articleView?id=ind.insurance_create_an_out_of_sequence_endorsement.htm&language=en_US&type=5)**  
+    An out-of-sequence endorsement is a modification to a policy with an effective date that is earlier than the effective date of another endorsement already bound on the policy. All the backdated changes are automatically applied on top of future policy versions within and across the policy terms.
+-   **[Managing Multiroot Policies](https://help.salesforce.com/s/articleView?id=ind.insurance_managing_multiroot_policies.htm&language=en_US&type=5)**  
+    Multiroot policies help insurance carriers enhance their product offerings by bundling multiple insurance products, such as auto and home insurance, into a single policy. This approach provides versatile coverage options that you can market and sell as a unified package.
+-   **[Insurance Policy Payment Schedule](https://help.salesforce.com/s/articleView?id=ind.insurance_insurance_policy_payment_schedule.htm&language=en_US&type=5)**  
+    The **Insurance Policy Payment Schedule** defines the agreed-upon payment plan between an insurance policyholder and the insurance company. It shows the scheduled payments including the premiums, taxes, and fees for a policy record across the policy term.
+-   **[Insurance Policy Lightning Web Components](https://help.salesforce.com/s/articleView?id=ind.insurance_insurance_policy_commercial_lightning_web_component_621400.htm&language=en_US&type=5)**  
+    Use the Insurance Policy Lightning web components to easily view and manage policies.
+-   **[Real-time Price Rerating](https://help.salesforce.com/s/articleView?id=ind.insurance_real_time_price_rerating_621232.htm&language=en_US&type=5)**  
+    With real-time price rerating, you can preview an updated policy’s total price before you issue it. Just add, remove, or change coverages on an Endorsement (mid-term adjustment) quote to see pricing changes in real-time. The Total premium, insured item premium, and affected line item price appear in red.
+-   **[Creating Bulk Renewals](https://help.salesforce.com/s/articleView?id=ind.insurance_creating_bulk_renewals_621444.htm&language=en_US&type=5)**  
+    The renewal business process begins once a customer (individual or group) is sold. But plan designs often change, so renewals must take into account when benefit plans are retired and what new plans take their place.
+-   **[Configuring and Using the Transaction Component](https://help.salesforce.com/s/articleView?id=ind.insurance_configuring_and_using_the_transaction_component_621543.htm&language=en_US&type=5)**  
+    The Transaction component list is supported for claims and assets (insurance policies). To use it, add the transaction component to the claims and asset detail pages, then associate it with an Integration Procedure.
+-   **[Transaction Reversals](https://help.salesforce.com/s/articleView?id=ind.insurance_transaction_reversals_622031.htm&language=en_US&type=5)**  
+    You can reverse transactions you make on insurance policies. Vlocity Insurance calculates the reversal and generates the transaction required to amend the policy.
+-   **[Tracking Earned and Unearned Revenue](https://help.salesforce.com/s/articleView?id=ind.insurance_tracking_earned_and_unearned_revenue_622091.htm&language=en_US&type=5)**  
+    You can use Insurance for revenue recognition for insurance policies. Revenue recognition tracks revenue per-policy as follows:
+-   **[Insurance Billing](https://help.salesforce.com/s/articleView?id=ind.insurance_vlocity_insurance_billing_622417.htm&language=en_US&type=5)**  
+    Insurance Billing can help you provide your customers, brokers, and agents with a seamless billing, statements, and payments experience.
+-   **[Automate Daylight Saving Time Transitions](https://help.salesforce.com/s/articleView?id=ind.insurance_configure_day_light_saving_adjustment.htm&language=en_US&type=5)**  
+    Configure your org with custom settings to automatically adjust time-sensitive insurance processes during Daylight Saving Time (DST) changes. Enable a custom setting to keep policy workflows accurate by aligning date and time values with your org’s time zone during DST start and end dates. The setting is off by default but can be turned on when DST alignment is required.
+-   **[Considerations and Limitations for Insurance Policies](https://help.salesforce.com/s/articleView?id=ind.insurance_considerations_and_limitations_for_insurance_policies.htm&language=en_US&type=5)**  
+    Here are some things to keep in mind about Insurance Policies.
+
+Did this article solve your issue?
+
+Let us know so we can improve!
+
+YesNo
