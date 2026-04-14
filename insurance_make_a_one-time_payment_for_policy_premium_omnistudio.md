@@ -1,0 +1,35 @@
+---
+title: "Make a One-Time Payment for Policy Premium"
+source: "https://help.salesforce.com/s/articleView?id=ind.insurance_make_a_one-time_payment_for_policy_premium_omnistudio.htm&language=en_US&type=5"
+scraped: "2026-04-14"
+filter: "ind.insurance_"
+---# Make a One-Time Payment for Policy Premium
+
+Make a One-Time Payment for Policy Premium[](https://help.salesforce.com/s?language=en_US)
+
+You are here:
+
+1.  [Salesforce Help](/s/?language=en_US)
+2.  [Docs](/s/products?language=en_US)
+3.  [Digital Insurance](https://help.salesforce.com/s/articleView?id=ind.insurance_admin_standard.htm&language=en_US&type=5)
+
+# Make a One-Time Payment for Policy Premium
+
+Policyholders and admin users can perform the payment from the Lex Console:
+
+[](https://help.salesforce.com/s?language=en_US)
+
+1.  Open the policy that you want to make the payment for and from **Actions**, click **One-Time Payment**.
+2.  Enter the **Payment Date**.
+3.  Select a **Method of Payment** and click **Proceed to Pay**.
+4.  Enter payment details and click **Next**.
+5.  That's it! You see a confirmation if you payment is approved. To see your policy, click **View Policy**.
+    
+    A payment record is created in the user account associated with the policy. You can see details in the Related section, under Billing Accounts.
+    
+
+Did this article solve your issue?
+
+Let us know so we can improve!
+
+YesNo
