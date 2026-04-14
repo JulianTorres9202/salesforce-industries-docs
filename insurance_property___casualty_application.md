@@ -1,0 +1,36 @@
+---
+title: "Property & Casualty Application Spring '21"
+source: "https://help.salesforce.com/s/articleView?id=ind.insurance_property___casualty_application.htm&language=en_US&type=5"
+scraped: "2026-04-14"
+filter: "ind.insurance_"
+---# Property & Casualty Application Spring '21
+
+Property & Casualty Application Spring '21[](https://help.salesforce.com/s?language=en_US)
+
+You are here:
+
+1.  [Salesforce Help](/s/?language=en_US)
+2.  [Docs](/s/products?language=en_US)
+3.  [Digital Insurance](https://help.salesforce.com/s/articleView?id=ind.insurance_admin_standard.htm&language=en_US&type=5)
+
+# Property & Casualty Application Spring '21
+
+Your users can now file a FNOL for a multi auto policy using a guided flow. Empower your service agents with a 360-degree view of the customer from the OmniStudio FlexCard-based interaction console.
+
+**Where:** You can access these features in the Property and Casualty business app.
+
+**Who:** This feature is available to your customers and service agents.
+
+**Why:** Your users can file FNOL for claims by selecting the insured item from the policy and entering incident details like the peril, damage details, where the incident occurred, injured parties, police reports, and any witnesses.
+
+Your service agents can use the Interaction Launcher to search and verify the caller's identity and then quickly see a complete view of the customer's relevant information including the customer's profile, previous interactions, and policies.
+
+**How:**[Request a reference org](https://help.salesforce.com/s/articleView?id=ind.insurance_get_started_app_suite_orgs.htm&language=en_US&type=5#insurance_get_started_app_suite_orgs "Insurance business apps are pre-built solutions created with industry experts to help you modernize your business and focus more on your customers. These apps are delivered through reference orgs that include the Insurance managed package. To accelerate your digital transformation, these reference orgs also have sample configuration and seed data you can migrate into your production org. Industries Business App reference orgs are only available to current customers and partners.") for Property and Casualty.
+
+We've added example functionality in the org that you can play with and make your own or create new ones. You don't need to do any configuration steps to use these features.
+
+Did this article solve your issue?
+
+Let us know so we can improve!
+
+YesNo
