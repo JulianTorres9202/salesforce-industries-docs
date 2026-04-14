@@ -1,0 +1,31 @@
+---
+title: "Insurance Property & Casualty Application Suite Policy Number Interaction"
+source: "https://help.salesforce.com/s/articleView?id=ind.insurance_propertycasualty_application_suite_policy_numberinteraction_521907.htm&language=en_US&type=5"
+scraped: "2026-04-14"
+filter: "ind.insurance_"
+---# Insurance Property & Casualty Application Suite Policy Number Interaction
+
+Insurance Property & Casualty Application Suite Policy Number Interaction[](https://help.salesforce.com/s?language=en_US)
+
+You are here:
+
+1.  [Salesforce Help](/s/?language=en_US)
+2.  [Docs](/s/products?language=en_US)
+3.  [Digital Insurance](https://help.salesforce.com/s/articleView?id=ind.insurance_admin_standard.htm&language=en_US&type=5)
+
+# Insurance Property & Casualty Application Suite Policy Number Interaction
+
+A service agent can verify the policy number details with the interaction launcher.
+
+[](https://help.salesforce.com/s?language=en_US)After receiving a call:
+
+1.  Open the Interaction Launcher from the utility bar at the bottom.
+2.  In the **POLICY NUMBER** section, enter the serial number of the policy and click **Search**.
+3.  The results are displayed and you need to click **Verify** to corroborate customer information.
+4.  Based on the caller's responses, click the checkmark to verify relevant details and then click **Launch Console** for the customer information.
+
+Did this article solve your issue?
+
+Let us know so we can improve!
+
+YesNo
